@@ -26,14 +26,7 @@
     <title>IMOB Dashboard</title>
   </head>
   <body>
-    <div class="sidebar">
-      <a
-        href="javascript:void(0);"
-        style="font-size: 15px; position: fixed; top: 0; right: 0"
-        class="icon"
-        onclick="myFunction()"
-        >&#9776;</a
-      >
+    <div class="sidebar" id="myTopnav">
       <a class="image"
         ><img
           src="{% static 'dash/images/aml.png' %}"
@@ -59,6 +52,13 @@
         href="{% url 'imob:dashboard' %}"
         class="{% if url_name == 'dashboard' %}active{% endif %}"
         >Dashboard</a
+      >
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px; position: fixed; top: 0; right: 0"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
       >
     </div>
     <main>{% block main %} {% endblock main %}</main>
