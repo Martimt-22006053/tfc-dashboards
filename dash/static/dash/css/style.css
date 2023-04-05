@@ -9,7 +9,7 @@ body {
 
 footer {
     background-color: white;
-    padding: 2px;
+    padding: 1px;
     text-align: center;
     margin-top: auto;
 }
@@ -158,8 +158,8 @@ div.contentHome {
 
 
 .myDiv{
-    width: 153vh;
-    height: 86vh;
+    width: 155.5vh;
+    height: 95vh;
 }
 
 
