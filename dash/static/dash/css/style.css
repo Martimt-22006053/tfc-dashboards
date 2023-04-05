@@ -22,6 +22,10 @@ h1{
 
 /* ----------------- sidebar ----------------- */
 
+.sidebar .icon {
+    display: none;
+}
+
 .sidebar {
     padding: 0;
     width: 200px;
@@ -163,20 +167,39 @@ div.contentHome {
 /* --------------------- 900px ------------------*/
 
 @media screen and (max-width: 900px) {
-    .topnav.responsive {
+
+    .sidebar a {
+        display: none;
+    }
+
+    .sidebar a.icon {
+        float: right;
+        display: block;
+        color: black;
+        background-color: white;
+    }
+
+    .sidebar.responsive {
         position: relative;
     }
     
-    .topnav.responsive .icon {
+    .sidebar.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
     
-    .topnav.responsive a {
+    .sidebar.responsive a {
         float: none;
         display: block;
         text-align: left;
+        background-color: white;
+    }
+
+    .sidebar a.icon {
+        float: right;
+        display: block;
+        color: black;
         background-color: white;
     }
 }
