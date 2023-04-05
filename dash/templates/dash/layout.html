@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 {% load static %} {% with url_name=request.resolver_match.url_name %}
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
 <html lang="pt">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +27,13 @@
   </head>
   <body>
     <div class="sidebar">
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px; position: fixed; top: 0; right: 0"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
       <a class="image"
         ><img
           src="{% static 'dash/images/aml.png' %}"
