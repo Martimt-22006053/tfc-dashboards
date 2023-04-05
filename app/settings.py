@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-x(o03q#2a(j&e0ide^j@l9fgx30pyqjb14movkkx*1w=x#(jow
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tmldashboards.pythonanywhere.com']
+ALLOWED_HOSTS = ['tmldashboards.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
