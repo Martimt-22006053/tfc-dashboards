@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %} {% with url_name=request.resolver_match.url_name %}
+<html lang="pt">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="{% static 'IMOB/images/ulht.jpg' %}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Martim Teixeira" />
+    <link rel="stylesheet" href="{% static 'IMOB/CSS/style.css' %}" />
+    <title>IMOB Dashboard</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a class="image"
+        ><img
+          src="{% static 'IMOB/images/aml.png' %}"
+          alt="AML logo"
+          class="imglogo"
+      /></a>
+      <a
+        href="{% url 'imob:home' %}"
+        class="{% if url_name == 'home' %}active{% endif %}"
+        >Início</a
+      >
+      <a
+        href="{% url 'imob:imobpage' %}"
+        class="{% if url_name == 'imobpage' %}active{% endif %}"
+        >IMOB</a
+      >
+      <a
+        href="{% url 'imob:aml' %}"
+        class="{% if url_name == 'aml' %}active{% endif %}"
+        >AML</a
+      >
+      <a
+        href="{% url 'imob:dashboard' %}"
+        class="{% if url_name == 'dashboard' %}active{% endif %}"
+        >Dashboard</a
+      >
+    </div>
+    <main>{% block main %} {% endblock main %}</main>
+    <footer>
+      <p>
+        Trabalho Final de Curso <br />
+        Autor: Martim Teixeira <br />
+        Universidade Lusófona de Humanidades e Tecnologias
+      </p>
+    </footer>
+  </body>
+</html>
+{% endwith %}

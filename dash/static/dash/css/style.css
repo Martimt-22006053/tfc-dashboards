@@ -1,0 +1,159 @@
+body {
+    background-color: #E7E6E6;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: white;
+    padding: 2px;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+
+h1{
+    font-size: 40px;
+}
+
+/* ----------------- sidebar ----------------- */
+
+.sidebar {
+    padding: 0;
+    width: 200px;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    margin: 5px 0px;
+    font-size: 20px;
+}
+
+.sidebar a.image {
+    display: block;
+    color: black;
+    padding: 0px !important;
+    margin: 0px !important;
+    text-decoration: none;
+}
+
+.sidebar a.image:hover:not(.active) {
+    background-color: #ffffff;
+    color: white;
+}
+
+.sidebar a.active {
+    color: black;
+    font-weight: bold;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 210px;
+    padding: 1px 16px;
+    min-height: 100vh;
+}
+
+.imglogo {
+    max-width: 200px;
+    height: auto;
+}
+
+
+/* ----------------- home ----------------- */
+
+
+div.contentHome {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100vh;
+    background-image: url("/static/IMOB/images/praca-do-comercio-em-lisboa-escuro.png") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.texthome{
+    display: flex;
+    color: white;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textcentered{
+    font-size: 60px;
+}
+
+
+/* ----------------- imobpage ----------------- */
+
+
+.textPrincipalPage{
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+.paddingPoints{
+    padding: 0px 50px;
+}
+
+.imgboximob{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imgimob{
+    width: 450px;
+    height: auto;
+}
+
+
+/* ----------------- aml -------------------- */
+
+
+.imgamlbox{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imgaml {
+    width: 600px;
+    height: auto;
+}
+
+
+/* ----------------- iframe ----------------- */
+
+
+.centeriframe{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.myDiv{
+    width: 153vh;
+    height: 86vh;
+}

@@ -1,0 +1,69 @@
+{% extends 'IMOB/layout.html' %} {% block main %} {% load static %}
+<div class="content">
+  <h1>Inquérito à Mobilidade nas Áreas Metropolitanas do Porto e de Lisboa</h1>
+  <div class="textPrincipalPage">
+    <p>
+      O Inquérito à Mobilidade 2017 teve como objetivo principal caracterizar as
+      deslocações realizadas pela população residente, dando resposta
+      designadamente às seguintes questões:
+    </p>
+    <div class="paddingPoints">
+      <p>Como nos deslocamos?</p>
+      <p>Quanto tempo demoramos?</p>
+      <p>Que distâncias percorremos?</p>
+      <p>Que custos temos?</p>
+    </div>
+    <p>
+      A realização visou em primeiro lugar corresponder a necessidades de
+      informação identificadas pelas Áreas Metropolitanas do Porto e de Lisboa.
+      A colaboração a diversos níveis destas entidades foi aliás essencial para
+      a concretização desta operação estatística.
+    </p>
+    <div class="imgboximob">
+      <img
+        src="{% static 'IMOB/images/imob.png' %}"
+        alt="AML logo"
+        class="imgimob"
+      />
+    </div>
+    <p>
+      Este inquérito, de realização ocasional, veio permitir a quantificação das
+      deslocações dos residentes nas áreas metropolitanas, pese embora diversas
+      conclusões virem confirmar a perceção já existente sobre esta temática.
+      Subdividiu-se em 3 partes, sobre:
+    </p>
+    <ul>
+      <div>
+        <li>
+          caracterização da população residente na perspetiva da mobilidade
+          (população móvel), incluindo informação socioeconómica e despesas com
+          a mobilidade;
+        </li>
+        <li>
+          análise da mobilidade na área metropolitana de acordo com duas
+          óticas:<br />
+          - deslocações totais realizadas, segundo a residência do
+          respondente,<br />
+          - deslocações intrametropolitanas (origem e destino na área
+          metropolitana);
+        </li>
+        <li>
+          opiniões dos residentes, evidenciando razões para utilização do
+          transporte individual e público, bem como a avaliação efetuada sobre
+          os transportes públicos.
+        </li>
+      </div>
+    </ul>
+    <p>
+      Neste trabalho apenas serão utilizados os dados do inquérito relativos à
+      Área Metropolitana de Lisboa. Os dados utilizados e o relatório relativo a
+      este estudo encontram se
+      <a
+        href="https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_publicacoes&PUBLICACOESpub_boui=349495406&PUBLICACOESmodo=2&&fbclid=IwAR2QzUZK0mUSEdKySZe1HqmObblKWR62vIyVhtVAAxrQhyNllna-DDfp2bk&xlang=pt"
+        target="_blank"
+        >aqui</a
+      >.
+    </p>
+  </div>
+</div>
+{% endblock %}
