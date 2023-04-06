@@ -150,6 +150,7 @@ div.contentHome {
 
 
 .centeriframe{
+    padding-top: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -166,6 +167,14 @@ div.contentHome {
 
 /* --------------------- 900px ------------------*/
 
+
+@media screen and (max-width: 1400px) {
+
+    .myDiv {
+        width: 100%;
+        height: 90vh;
+    }
+}
 
 @media screen and (max-width: 900px) {
 
@@ -213,6 +222,16 @@ div.contentHome {
         display: block;
         color: black;
         background-color: white;
+    }
+
+    .imgimob {
+        width: 60%;
+        height: auto;
+    }
+
+    .imgaml {
+        width: 80%;
+        height: auto;
     }
 
 }
