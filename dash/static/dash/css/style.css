@@ -220,6 +220,7 @@ div.contentHome {
     .sidebar a.icon {
         float: right;
         display: block;
+        position: fixed;
         color: black;
         background-color: white;
     }
