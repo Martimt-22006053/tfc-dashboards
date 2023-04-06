@@ -192,7 +192,7 @@ div.contentHome {
     .sidebar {
         width: 100%;
         height: auto;
-        position: fixed;
+        position: relative;
     }
 
     div.content {
@@ -220,7 +220,6 @@ div.contentHome {
     .sidebar a.icon {
         float: right;
         display: block;
-        position: fixed;
         color: black;
         background-color: white;
     }
@@ -244,7 +243,7 @@ div.contentHome {
     }
     
     .sidebar.responsive .icon {
-        position: absolute;
+        position: relative;
         right: 0;
         top: 0;
     }
