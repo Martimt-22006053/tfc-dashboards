@@ -22,9 +22,9 @@ function myFunction() {
       });
     }
 
-    // Verifique se o usuário está na página
+    // Verifique se o utilizador está na página
     if (window.location.pathname != '/dashboard') {
-      // Se o usuário não estiver na página, redirecione-o para a página de dashboards
+      // Se o utilizador não estiver na página, redirecione-o para a página de dashboards
       var dropdown = document.querySelector(".dropdown-btn");
       if (dropdown){
         dropdown.addEventListener("click", function () {
@@ -32,16 +32,9 @@ function myFunction() {
       });
       }
     } else {
-      // Se o usuário estiver na página, expanda o menu automaticamente e defina a função toggleDropdown
+      // Se o utilizador estiver na página, expanda o menu automaticamente
       var dropdownContent = document.getElementById("container-drop");
       dropdownContent.style.display = "block";
-      function changepage() {
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      }
     }
 
     function pbFunc(page) {
