@@ -24,19 +24,22 @@ function myFunction() {
 
     // Verifique se o usuário está na página
     if (window.location.href.indexOf("dashboard") === -1) {
+      console.log("entrou 1")
       // Se o usuário não estiver na página, redirecione-o para a página de dashboards
       var dropdown = document.querySelector(".dropdown-btn");
       if (dropdown){
         dropdown.addEventListener("click", function () {
         window.location.href = "/dashboard";
+        console.log("entrou 2")
       });
       }
     } else {
+      console.log("entrou 3")
       // Se o usuário estiver na página, expanda o menu automaticamente e defina a função toggleDropdown
       var dropdownContent = document.getElementById("container-drop");
       dropdownContent.style.display = "block";
       function changepage() {
-        console.log("Teste");
+        console.log("entrou 4")
         if (dropdownContent.style.display === "block") {
           dropdownContent.style.display = "none";
         } else {
