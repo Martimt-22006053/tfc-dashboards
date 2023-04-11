@@ -17,7 +17,11 @@ function myFunction() {
         if (dropdownContent.style.display === "block") {
           dropdownContent.style.display = "none";
         } else {
-          dropdownContent.style.display = "block";
+          if (window.location.href.indexOf("dashboard") === -1){
+            
+          } else {
+            dropdownContent.style.display = "block";
+          }
         }
       });
     }
@@ -25,8 +29,6 @@ function myFunction() {
     // Verifique se o usuário está na página
     console.log(window.location.href)
     if (window.location.href.indexOf("dashboard") === -1) {
-      var dropdownContent = document.getElementById("container-drop");
-      dropdownContent.style.display = "none";
       // Se o usuário não estiver na página, redirecione-o para a página de dashboards
       var dropdown = document.querySelector(".dropdown-btn");
       if (dropdown){
