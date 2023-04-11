@@ -16,7 +16,7 @@ footer {
 
 
 
-h1{
+h1 {
     font-size: 40px;
 }
 
@@ -123,7 +123,7 @@ div.contentHome {
 }
 
 
-.texthome{
+.texthome {
     display: flex;
     color: white;
     height: 95vh;
@@ -132,7 +132,7 @@ div.contentHome {
     text-align: center;
 }
 
-.textcentered{
+.textcentered {
     font-size: 60px;
 }
 
@@ -140,22 +140,22 @@ div.contentHome {
 /* ----------------- imobpage ----------------- */
 
 
-.textPrincipalPage{
+.textPrincipalPage {
     padding: 0px 20px;
     font-size: 20px;
 }
 
-.paddingPoints{
+.paddingPoints {
     padding: 0px 50px;
 }
 
-.imgboximob{
+.imgboximob {
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.imgimob{
+.imgimob {
     width: 450px;
     height: auto;
 }
@@ -164,7 +164,7 @@ div.contentHome {
 /* ----------------- aml -------------------- */
 
 
-.imgamlbox{
+.imgamlbox {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -179,7 +179,7 @@ div.contentHome {
 /* ----------------- iframe ----------------- */
 
 
-.centeriframe{
+.centeriframe {
     padding-top: 20px;
     justify-content: center;
     align-items: center;
@@ -188,7 +188,7 @@ div.contentHome {
 
 
 
-.myDiv{
+.myDiv {
     width: 155.5vh;
     height: 95vh;
 }
@@ -276,11 +276,13 @@ div.contentHome {
     .sidebar.responsive {
         position: relative;
     }
-    
+
     .sidebar.responsive .icon {
-        position: relative;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
-    
+
     .sidebar.responsive a {
         float: none;
         display: block;
