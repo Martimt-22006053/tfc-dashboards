@@ -7,5 +7,6 @@ urlpatterns = [
     path('', views.home_page_view, name='home'),
     path('imob', views.imob_page_view, name='imobpage'),
     path('aml', views.aml_page_view, name='aml'),
-    path('dashboard', views.dashboard_page_view, name='dashboard')
+    path('dashboard', views.dashboard_page_view, name='dashboard'),
+    path('dashboard2', views.dashboard2_page_view, name='dashboard2')
 ]

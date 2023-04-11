@@ -43,37 +43,35 @@
           class="{% if url_name == 'aml' %}active{% endif %}"
           >AML</a
         >
-        <button class="dropdown-btn">
+        <button onclick="changepage()" class="dropdown-btn">
           Dashboards Mobilidade
           <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-container">
-          <a href="{% url 'imob:dashboard' %}" onclick="pbFunc(page1)"
-            >População e Municípios</a
+        <div class="dropdown-container" id="container-drop">
+          <a href="#" onclick="pbFunc('page1')">População e Municípios</a>
+          <a href="#" onclick="pbFunc('page2')">Caracterização população</a>
+          <a href="#" onclick="pbFunc('page3')">Despesas população</a>
+          <a href="#" onclick="pbFunc('page4')">Tipo transporte</a>
+          <a href="#" onclick="pbFunc('page5')">Deslocações diárias</a>
+          <a href="#" onclick="pbFunc('page6')">Tipo de estacionamento</a>
+          <a href="#" onclick="pbFunc('page7')"
+            >Duração e distância deslocações</a
           >
-          <a href="{% url 'imob:dashboard' %}" onclick="pbFunc(page2)"
-            >Caracterização população</a
-          >
-          <a href="" onclick="pbFunc(page3)">Despesas população</a>
-          <a href="" onclick="pbFunc(page4)">Tipo transporte</a>
-          <a href="" onclick="pbFunc(page5)">Deslocações diárias</a>
-          <a href="" onclick="pbFunc(page6)">Tipo de estacionamento</a>
-          <a href="" onclick="pbFunc(page7)">Duração e distância deslocações</a>
-          <a href="" onclick="pbFunc(page8)">Deslocações intramunicipais</a>
-          <a href="" onclick="pbFunc(page9)">Deslocações intermunicipais</a>
-          <a href="" onclick="pbFunc(page10)"
+          <a href="#" onclick="pbFunc('page8')">Deslocações intramunicipais</a>
+          <a href="#" onclick="pbFunc('page9')">Deslocações intermunicipais</a>
+          <a href="#" onclick="pbFunc('page10')"
             >Destino deslocações intermunicipais</a
           >
-          <a href="" onclick="pbFunc(page11)">Densidade deslocações</a>
-          <a href="" onclick="pbFunc(page12)"
+          <a href="#" onclick="pbFunc('page11')">Densidade deslocações</a>
+          <a href="#" onclick="pbFunc('page12')"
             >Automóvel vs Transportes públicos</a
           >
-          <a href="" onclick="pbFunc(page13)">Transportes públicos</a>
-          <a href="" onclick="pbFunc(page14)">Utilização automóvel</a>
-          <a href="" onclick="pbFunc(page15)"
+          <a href="#" onclick="pbFunc('page13')">Transportes públicos</a>
+          <a href="#" onclick="pbFunc('page14')">Utilização automóvel</a>
+          <a href="#" onclick="pbFunc('page15')"
             >Utilização transportes públicos</a
           >
-          <a href="" onclick="pbFunc(page16)">Avaliação</a>
+          <a href="#" onclick="pbFunc('page16')">Avaliação</a>
         </div>
         <a
           href="javascript:void(0);"
@@ -118,8 +116,32 @@
     });
   }
 
+  // Verifique se o usuário está na página
+  if (window.location.href.indexOf("dashboard") === -1) {
+    // Se o usuário não estiver na página, redirecione-o para a página de dashboards
+    var dropdown = document.querySelector(".dropdown-btn");
+    dropdown.addEventListener("click", function () {
+      window.location.href = "{% url 'imob:dashboard' %}";
+    });
+  } else {
+    // Se o usuário estiver na página, expanda o menu automaticamente e defina a função toggleDropdown
+    var dropdownContent = document.getElementById("container-drop");
+    dropdownContent.style.display = "block";
+    function toggleDropdown() {
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    }
+  }
+
   function pbFunc(page) {
-    var iframe = document.getElementById("report");
+    var iframe = document.getElementById("myIframe");
+    console.log(iframe);
+    if (iframe === null) {
+      location.href = "/dashboard#";
+    }
     if (page === "page1") {
       iframe.setAttribute(
         "src",
@@ -133,7 +155,15 @@
     } else if (page === "page3") {
       iframe.src =
         "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection1ac5b021f4602be041e4";
+    } else if (page === "page4") {
+      iframe.src =
+        "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection9c5a5aeb60a498607340";
+    } else if (page === "page5") {
+      iframe.src =
+        "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectionf29840bd830107865ed2";
     }
+    document.getElementById("myIframe").contentWindow.location.reload();
+    console.log(iframe);
   }
 </script>
 {% endwith %}

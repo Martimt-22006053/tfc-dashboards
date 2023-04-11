@@ -202,7 +202,7 @@ div.contentHome {
 
     .myDiv {
         width: 100%;
-        height: auto;
+        height: 73vh;
     }
 }
 
@@ -293,5 +293,11 @@ div.contentHome {
         display: block;
         text-align: left;
         background-color: white;
+    }
+
+    .dropdown-container {
+        display: none;
+        background-color: #ffffff;
+        padding-left: 6px;
     }
 }
