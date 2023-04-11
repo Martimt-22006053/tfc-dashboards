@@ -23,7 +23,7 @@ function myFunction() {
     }
 
     // Verifique se o usuário está na página
-    if (window.location.href.indexOf("dashboard") === -1) {
+    if (window.location.pathname != '/dashboard') {
       console.log("entrou 1")
       // Se o usuário não estiver na página, redirecione-o para a página de dashboards
       var dropdown = document.querySelector(".dropdown-btn");
