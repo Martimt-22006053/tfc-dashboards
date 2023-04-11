@@ -24,22 +24,18 @@ function myFunction() {
 
     // Verifique se o usuário está na página
     if (window.location.pathname != '/dashboard') {
-      console.log("entrou 1")
       // Se o usuário não estiver na página, redirecione-o para a página de dashboards
       var dropdown = document.querySelector(".dropdown-btn");
       if (dropdown){
         dropdown.addEventListener("click", function () {
         window.location.href = "/dashboard";
-        console.log("entrou 2")
       });
       }
     } else {
-      console.log("entrou 3")
       // Se o usuário estiver na página, expanda o menu automaticamente e defina a função toggleDropdown
       var dropdownContent = document.getElementById("container-drop");
       dropdownContent.style.display = "block";
       function changepage() {
-        console.log("entrou 4")
         if (dropdownContent.style.display === "block") {
           dropdownContent.style.display = "none";
         } else {
@@ -72,6 +68,39 @@ function myFunction() {
       } else if (page === "page5") {
         iframe.src =
           "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectionf29840bd830107865ed2";
+      } else if (page === "page6") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection91ea9ffa611d5c89e865";
+      } else if (page === "page7") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection36d3252290000a008c70";
+      } else if (page === "page8") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection931618310c99c0d3d12e";
+      } else if (page === "page9") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection690abbe5b07dd2fcb85d";
+      } else if (page === "page10") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectionc48c3f3edf29496ecc99";
+      } else if (page === "page11") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectioncfa6deb12f89d30f5345";
+      } else if (page === "page12") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection0f057140b5d52645259b";
+      } else if (page === "page13") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectionf51ce5206e9b22a7f992";
+      } else if (page === "page14") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection150a9f8bcb6f120c3b11";
+      } else if (page === "page15") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectionbd09a469c2e5cacb0b57";
+      } else if (page === "page16") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectioncc306d9f46a3ab039ea7";
       }
       document.getElementById("myIframe").contentWindow.location.reload();
     }
