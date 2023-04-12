@@ -94,5 +94,6 @@ function myFunction() {
         iframe.src =
           "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectioncc306d9f46a3ab039ea7";
       }
+      myFunction();
       document.getElementById("myIframe").contentWindow.location.reload();
     }
