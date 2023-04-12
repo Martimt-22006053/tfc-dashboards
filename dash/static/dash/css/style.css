@@ -106,6 +106,7 @@ div.content {
     display: none;
     background-color: #ffffff;
     padding-left: 6px;
+    z-index: 2;
 }
 
 .fa-caret-down {
@@ -259,11 +260,13 @@ div.contentHome {
     .sidebar {
         width: 100%;
         height: auto;
-        position: relative;
+        position: absolute;
+        /*display: block;*/
     }
 
     div.content {
         margin-left: 0;
+        margin-top: 62px;
     }
 
     div.contentHome {
@@ -274,6 +277,7 @@ div.contentHome {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        margin-top: 62px;
     }
 
     .sidebar a.image {
@@ -310,7 +314,7 @@ div.contentHome {
 @media screen and (max-width: 900px) {
 
     .sidebar.responsive {
-        position: relative;
+        position: absolute;
     }
 
     .sidebar.responsive .icon {
