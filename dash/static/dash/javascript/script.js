@@ -95,5 +95,12 @@ function myFunction() {
           "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectioncc306d9f46a3ab039ea7";
       }
       myFunction();
+      for (let index = 1; index <= 17; index++) {
+        if (page === "page" + index){
+          document.getElementById(page).classList.add("active");
+        } else{
+          document.getElementById("page" + index).classList.remove("active");
+        }
+      }
       document.getElementById("myIframe").contentWindow.location.reload();
     }
