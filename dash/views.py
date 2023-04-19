@@ -13,6 +13,3 @@ def aml_page_view(request):
 
 def dashboard_page_view(request):
     return render(request, 'dash/dashboard.html')
-
-def dashboard2_page_view(request):
-    return render(request, 'dash/dashboard2.html')
