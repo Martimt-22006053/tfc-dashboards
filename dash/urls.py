@@ -9,3 +9,5 @@ urlpatterns = [
     path('aml', views.aml_page_view, name='aml'),
     path('dashboard', views.dashboard_page_view, name='dashboard')
 ]
+
+
