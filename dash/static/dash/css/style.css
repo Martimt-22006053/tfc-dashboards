@@ -67,6 +67,7 @@ h1 {
 .sidebar a.active {
     color: black;
     font-weight: bold;
+    background-color: rgb(255, 223, 83);
 }
 
 .active {
@@ -181,7 +182,7 @@ div.contentHome {
 }
 
 .imgaml {
-    width: 600px;
+    width: 550px;
     height: auto;
 }
 
