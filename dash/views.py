@@ -5,14 +5,14 @@ from django.shortcuts import render
 def home_page_view(request):
     return render(request, 'dash/home.html')
 
-def imob_page_view(request):
-    return render(request, 'dash/imobpage.html')
-
-def aml_page_view(request):
-    return render(request, 'dash/aml.html')
+def contextualizacao_page_view(request):
+    return render(request, 'dash/contextualizacao.html')
 
 def dashboard_page_view(request):
     return render(request, 'dash/dashboard.html')
 
+def dashboard2_page_view(request):
+    return render(request, 'dash/dashboard2.html')
 
-
+def dashboard3_page_view(request):
+    return render(request, 'dash/dashboard3.html')

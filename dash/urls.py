@@ -5,9 +5,10 @@ app_name = 'imob'
 
 urlpatterns = [
     path('', views.home_page_view, name='home'),
-    path('imob', views.imob_page_view, name='imobpage'),
-    path('aml', views.aml_page_view, name='aml'),
-    path('dashboard', views.dashboard_page_view, name='dashboard')
+    path('contextualizacao', views.contextualizacao_page_view, name='contextualizacao'),
+    path('dashboard', views.dashboard_page_view, name='dashboard'),
+    path('dashboard2', views.dashboard2_page_view, name='dashboard2'),
+    path('dashboard3', views.dashboard3_page_view, name='dashboard3')
 ]
 
 
