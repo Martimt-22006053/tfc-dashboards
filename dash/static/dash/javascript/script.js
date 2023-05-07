@@ -105,25 +105,25 @@ function myFunction() {
           "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectionf29840bd830107865ed2";
       } else if (page === "page6") {
         iframe.src =
-          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection91ea9ffa611d5c89e865";
+          "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection91ea9ffa611d5c89e865";
       } else if (page === "page7") {
         iframe.src =
-          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection36d3252290000a008c70";
+          "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection36d3252290000a008c70";
       } else if (page === "page8") {
         iframe.src =
-          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection931618310c99c0d3d12e";
+          "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection931618310c99c0d3d12e";
       } else if (page === "page9") {
         iframe.src =
-          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection690abbe5b07dd2fcb85d";
+          "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection690abbe5b07dd2fcb85d";
       } else if (page === "page10") {
         iframe.src =
-          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectionc48c3f3edf29496ecc99";
+          "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectionc48c3f3edf29496ecc99";
       } else if (page === "page11") {
         iframe.src =
           "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection4120ab5ae02e99ea10de";
       } else if (page === "page12") {
         iframe.src =
-          "https://app.powerbi.com/view?r=eyJrIjoiNDRiZDg2NTktOTBhMC00ZTEyLWFjNjItZjgyZmNlZGQwZjZmIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection0f057140b5d52645259b";
+          "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection0f057140b5d52645259b";
       }
       myFunction();
       for (let index = 1; index <= 17; index++) {
