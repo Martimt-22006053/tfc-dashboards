@@ -1,5 +1,5 @@
 {% extends 'dash/layout.html' %} {% block main %} {% load static %}
-<div class="content">
+<div class="contentContextualizacao">
   <h1>Inquérito à Mobilidade nas Áreas Metropolitanas do Porto e de Lisboa</h1>
   <div class="textPrincipalPage">
     <p>
@@ -7,6 +7,13 @@
       deslocações realizadas pela população residente, dando resposta
       designadamente às seguintes questões:
     </p>
+    <div class="imgboximob">
+      <img
+        src="{% static 'dash/images/imob.png' %}"
+        alt="IMOB logo"
+        class="imgimob"
+      />
+    </div>
     <div class="paddingPoints">
       <p>Como nos deslocamos?</p>
       <p>Quanto tempo demoramos?</p>
@@ -19,7 +26,7 @@
       A colaboração a diversos níveis destas entidades foi aliás essencial para
       a concretização desta operação estatística.
     </p>
-    <div class="imgboximob">
+    <div class="imgboximob2">
       <img
         src="{% static 'dash/images/imob.png' %}"
         alt="IMOB logo"
@@ -67,6 +74,13 @@
   </div>
   <h1>Área Metropolitana de Lisboa</h1>
   <div class="textPrincipalPage">
+    <div class="imgamlbox">
+      <img
+        src="{% static 'dash/images/municipios.png' %}"
+        alt="AML logo"
+        class="imgaml"
+      />
+    </div>
     <p>
       A Área Metropolitana de Lisboa (AML) é uma área constituída por 18
       municípios entre as margens norte e sul do Rio Tejo, dos quais fazem
@@ -74,7 +88,7 @@
       Mafra, Moita, Montijo, Odivelas, Oeiras, Palmela, Seixal, Sesimbra,
       Setúbal, Sintra e Vila Franca de Xira.
     </p>
-    <div class="imgamlbox">
+    <div class="imgamlbox2">
       <img
         src="{% static 'dash/images/municipios.png' %}"
         alt="AML logo"
@@ -99,8 +113,9 @@
       alcançar este objetivo, será necessário antes fazer um tratamento dos
       dados disponíveis. Pretende-se que os utilizadores deste Website consigam
       analisar e observar os Dashboards que foram criados, e assim, poderão ver
-      outro tipo de informações.
+      outro tipo de informações mais facilmente.
     </p>
+    <p>As tecnologias utilizadas para este desenvolvimento foram</p>
   </div>
 </div>
 {% endblock %}
