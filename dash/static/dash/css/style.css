@@ -172,6 +172,7 @@ div.contentContextualizacao {
     align-items: center;
     text-align: center;
     float: right;
+    padding-left: 20px;
 }
 
 .imgboximob2 {
@@ -189,6 +190,7 @@ div.contentContextualizacao {
     align-items: center;
     text-align: center;
     float: right;
+    padding-left: 20px;
 }
 
 .imgamlbox2 {
@@ -263,7 +265,7 @@ div.contentContextualizacao {
     }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1140px) {
 
     .imgamlbox {
         display: none;
