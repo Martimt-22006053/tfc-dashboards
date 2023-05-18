@@ -79,7 +79,7 @@ function myFunction() {
           "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection41c313ecdb083bac7800";
       } else if (page === "page3") {
         iframe.src =
-          "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection1ac5b021f4602be041e4";
+          "https://app.powerbi.com/view?r=eyJrIjoiNzNlY2E3NjItM2FlMC00MGFjLTk5OTYtOTFiMGQxMmUzYmY0IiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection85131fce1574c517d47d";
       }
       myFunction();
       for (let index = 1; index <= 17; index++) {
