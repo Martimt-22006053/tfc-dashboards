@@ -44,7 +44,7 @@ h1 {
     padding: 12px;
     text-decoration: none;
     margin: 5px 0px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .sidebar .icon {
@@ -99,7 +99,7 @@ div.content {
 .dropdown-btn {
     padding: 12px;
     margin: 5px 0px;
-    font-size: 18px;
+    font-size: 16px;
     color: #000000;
     display: block;
     border: none;
@@ -170,7 +170,7 @@ div.contentContextualizacao {
 
 .textPrincipalPage {
     padding: 0px 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .paddingPoints {
@@ -227,10 +227,10 @@ div.contentContextualizacao {
     background-color: #FEF200;
     color: black;
     border: solid 3px black;
-    padding: 15px 25px;
+    padding: 8px 20px;
     text-align: center;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 8px;
 }
 
