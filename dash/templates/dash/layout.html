@@ -22,12 +22,14 @@
   <body>
     <header>
       <div class="sidebar" id="myTopnav">
-        <a class="image" href="{% url 'imob:home' %}"
-          ><img
-            src="{% static 'dash/images/aml.png' %}"
-            alt="AML logo"
-            class="imglogo"
-        /></a>
+        <div class="imagebox">
+          <a class="image" href="{% url 'imob:home' %}"
+            ><img
+              src="{% static 'dash/images/aml.png' %}"
+              alt="AML logo"
+              class="imglogo"
+          /></a>
+        </div>
         <a
           href="{% url 'imob:home' %}"
           class="{% if url_name == 'home' %}active{% endif %}"
