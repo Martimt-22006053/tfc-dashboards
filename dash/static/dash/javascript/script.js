@@ -64,6 +64,20 @@ function myFunction() {
       var dropdownContent = document.getElementById("container-drop3");
       dropdownContent.style.display = "block";
     }
+
+    if (window.location.pathname != '/dashboard4') {
+      // Se o utilizador não estiver na página, redirecione-o para a página de dashboards
+      var dropdown = document.getElementById("button4");
+      if (dropdown){
+        dropdown.addEventListener("click", function () {
+          window.location.href = "/dashboard4";
+        });
+      }
+    } else {
+      // Se o utilizador estiver na página, expanda o menu automaticamente
+      var dropdownContent = document.getElementById("container-drop4");
+      dropdownContent.style.display = "block";
+    }
     
 
     function pbFunc(page) {
@@ -82,7 +96,7 @@ function myFunction() {
           "https://app.powerbi.com/view?r=eyJrIjoiMjRmMDgwNWUtYmMwOC00N2ZkLWFhMjYtZGU3NjUxMGIzZWZjIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection85131fce1574c517d47d";
       }
       myFunction();
-      for (let index = 1; index <= 17; index++) {
+      for (let index = 1; index <= 19; index++) {
         if (page === "page" + index){
           document.getElementById(page).classList.add("active");
         } else{
@@ -126,7 +140,7 @@ function myFunction() {
           "https://app.powerbi.com/view?r=eyJrIjoiMjRmMDgwNWUtYmMwOC00N2ZkLWFhMjYtZGU3NjUxMGIzZWZjIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection0f057140b5d52645259b";
       }
       myFunction();
-      for (let index = 1; index <= 17; index++) {
+      for (let index = 1; index <= 19; index++) {
         if (page === "page" + index){
           document.getElementById(page).classList.add("active");
         } else{
@@ -158,7 +172,30 @@ function myFunction() {
           "https://app.powerbi.com/view?r=eyJrIjoiMjRmMDgwNWUtYmMwOC00N2ZkLWFhMjYtZGU3NjUxMGIzZWZjIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSectioncc306d9f46a3ab039ea7";
       }
       myFunction();
-      for (let index = 1; index <= 17; index++) {
+      for (let index = 1; index <= 19; index++) {
+        if (page === "page" + index){
+          document.getElementById(page).classList.add("active");
+        } else{
+          document.getElementById("page" + index).classList.remove("active");
+        }
+      }
+      document.getElementById("myIframe").contentWindow.location.reload();
+    }
+
+    function pbFunc4(page) {
+      var iframe = document.getElementById("myIframe");
+      if (iframe === null) {
+        location.href = "/dashboard4#";
+      }
+      if (page === "page18") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiMjRmMDgwNWUtYmMwOC00N2ZkLWFhMjYtZGU3NjUxMGIzZWZjIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection077c79c7b4cecd403138";
+      } else if (page === "page19") {
+        iframe.src =
+          "https://app.powerbi.com/view?r=eyJrIjoiMjRmMDgwNWUtYmMwOC00N2ZkLWFhMjYtZGU3NjUxMGIzZWZjIiwidCI6IjEzOGNjYzA2LTUxNmItNGU4MS04ODEzLTA2ZmQyNTMxYmRkYyIsImMiOjh9&pageName=ReportSection0619b2b3d8a9450042e4";
+      }
+      myFunction();
+      for (let index = 1; index <= 19; index++) {
         if (page === "page" + index){
           document.getElementById(page).classList.add("active");
         } else{

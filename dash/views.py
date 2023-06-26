@@ -16,3 +16,6 @@ def dashboard2_page_view(request):
 
 def dashboard3_page_view(request):
     return render(request, 'dash/dashboard3.html')
+
+def dashboard4_page_view(request):
+    return render(request, 'dash/dashboard4.html')
