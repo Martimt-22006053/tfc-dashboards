@@ -9,7 +9,7 @@ urlpatterns = [
     path('dashboard', views.dashboard_page_view, name='dashboard'),
     path('dashboard2', views.dashboard2_page_view, name='dashboard2'),
     path('dashboard3', views.dashboard3_page_view, name='dashboard3'),
-    path('dashboard4', views.dashboard3_page_view, name='dashboard4')
+    path('dashboard4', views.dashboard4_page_view, name='dashboard4')
 ]
 
 
