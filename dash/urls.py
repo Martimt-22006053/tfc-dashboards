@@ -12,4 +12,3 @@ urlpatterns = [
     path('dashboard4', views.dashboard4_page_view, name='dashboard4')
 ]
 
-
