@@ -27,7 +27,7 @@ h1 {
 }
 
 .sidebar {
-    padding: 0;
+    padding: 0px;
     width: 200px;
     background-color: #ffffff;
     position: fixed;
@@ -95,16 +95,19 @@ div.content {
 }
 
 .imgTML {
-    max-width: 180px;
+    max-width: 150px;
     height: auto;
 }
 
 .imagebox{
-    position:fixed;
+    position: fixed;
     bottom: 0px;
     left: 0px;
-    padding-left: 8px;
-    padding-bottom: 5px;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 
