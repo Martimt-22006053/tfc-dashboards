@@ -99,7 +99,12 @@ div.content {
     height: auto;
 }
 
+.imgTML2 {
+    display: none;
+}
+
 .imagebox{
+    display: block;
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -108,6 +113,10 @@ div.content {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
+}
+
+.space{
+    height: 70px
 }
 
 
@@ -385,7 +394,7 @@ div.contentContextualizacao {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-top: 62px;
+        margin-top: 56px;
     }
 
     .sidebar a.image {
@@ -414,6 +423,25 @@ div.contentContextualizacao {
 
     .imgaml {
         width: 80%;
+        height: auto;
+    }
+
+    .imagebox {
+        display: none;
+    }
+
+    .space{
+        display: none;
+    }
+
+    .imglogo {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .imgTML2 {
+        display: inline;
+        max-width: 120px;
         height: auto;
     }
 
