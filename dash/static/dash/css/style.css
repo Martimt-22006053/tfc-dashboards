@@ -265,6 +265,10 @@ div.contentContextualizacao {
     border-radius: 8px;
 }
 
+.divButtonBack{
+    display: none;
+}
+
 
 /* ----------------- iframe ----------------- */
 
@@ -443,6 +447,12 @@ div.contentContextualizacao {
         display: inline;
         max-width: 120px;
         height: auto;
+    }
+
+    .divButtonBack{
+        display: block;
+        text-align: center;
+        padding: 10px
     }
 
 }
